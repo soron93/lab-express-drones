@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 let DroneSchema = mongoose.Schema({
     name: String,
     propellers: Number,
-    maxSpeed: Number
+    maxSpeed: String,
 })
 
 let DroneModel = mongoose.model('drone', DroneSchema)

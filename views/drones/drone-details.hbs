@@ -1,21 +1,17 @@
-<h2>Update the drone</h2>
+<h2>Update {{drone.name}}</h2>
 
-<h3>Name: {{drone.name}}</h3>
+<p>Propellers: {{drone.propellers}}</p>
 
-<h4>Propellers: {{drone.propellers}}</h4>
-
-<h4>Max Speed: {{drone.maxSpeed}}</h4>
+<p>Max Speed: {{drone.maxSpeed}}</p>
 
 
+<div id="update-buttons">
 
+    <form action="/drones/{{drone._id}}/edit" method="GET">
+        <button type="submit" class="form-button">EDIT</button>
+    </form>
 
-
-{{!-- The drone._id will be a dynamic id to a single todo --}}
-<form action="/drones/{{drone._id}}/edit" method="GET">
-    <button type="submit" class="btn btn-warning">Edit</button>
-</form>
-
-{{!-- The drone._id will be a dynamic id to a single todo --}}
-<form action="/drones/{{drone._id}}/delete" method="POST">
-    <button class="btn btn-danger">Delete</button>
-</form>
+    <form action="/drones/{{drone._id}}/delete" method="POST">
+        <button type="delete" class="form-button">DELETE</button>
+    </form>
+</div>
