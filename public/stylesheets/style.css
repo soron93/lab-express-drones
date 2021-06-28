@@ -96,15 +96,3 @@ h1 {
 #update-buttons {
   display: flex;
 }
-
-.update-form-button {
-  background-color: #9013FE;
-  border: none;
-  color: white;
-  padding: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 20px;
-  font-size: medium;
-  font-weight: 500;
-}
