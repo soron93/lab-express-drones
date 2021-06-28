@@ -1,8 +1,98 @@
 body {
-  padding: 0px;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(155, 155, 155, 0.50);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: large;
 }
 
 a {
-  color: #8800ff;
+  font-size: large;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  padding: 12px;
+  background-color: rgba(144, 19, 254, 0.25);
+  color: black;
+  border-radius: 20px;
+}
+
+.navbar-button {
+  padding: 12px;
+  background-color: #9013FE;
+  color: white;
+  border-radius: 20px;
+}
+
+.navbar-button:hover {
+  font-size: large;
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  background-color: rgba(144, 19, 254, 0.25);
+}
+
+.body-container {
+  margin: 3rem;
+  padding: 20px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h1 {
+  font: large;
+}
+
+.list-drones {
+  font-weight: 500;
+  background: transparent;
+}
+
+.list-drones:hover {
+  background: transparent;
+  color: #9013FE;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.form-control:focus {
+  background-color: lightblue;
+}
+
+.form-button {
+  background-color: #9013FE;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 500;
+}
+
+.form-button:hover {
+  background-color: rgba(144, 19, 254, 0.25);
+  color: black;
+}
+
+#update-buttons {
+  display: flex;
 }
